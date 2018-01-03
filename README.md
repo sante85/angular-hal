@@ -10,14 +10,14 @@ npm install angular-hal
 ```
 ## Configuration
 
-1. Import HalAngularModule in your app root module
+1. Import AngularHalModule in your app root module
 2. ResourceService is the entry-point for interacting with Spring Data Rest resources. Their should be only one application-wide ResourceService. So we add it to the providers of our app root module.
 3. Set the base URL of our Spring Data Rest API with the API_URI InjectionToken. Either put a string value or use an environment variable (best practise in multi-environment deployments)
 
 ```typescript
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {HalAngularModule, ResourceService, API_URI} from 'angular-hal';
+import {AngularHalModule, ResourceService, API_URI} from 'angular-hal';
 
 import {AppComponent} from './app.component';
 import {environment} from '../environments/environment';
@@ -29,7 +29,7 @@ import {environment} from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    HalAngularModule
+    AngularHalModule
   ],
   providers: [
     ResourceService,
