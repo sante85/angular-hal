@@ -1,0 +1,11 @@
+node_modules
+src
+
+karma.conf.js
+tsconfig.json
+tslint.json
+./.editorconfig
+./.gitignore
+./.idea
+
+*.ngfactory.ts
